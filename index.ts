@@ -1,13 +1,14 @@
-const testData = ``; // Add the exemple data
-const testResult = ``; // Add the exemple data result
+import { runTest, TestCase } from "./test.utils";
 
-function solveQuestion(data:string[]){
+const test1:TestCase = {}
+
+function solver(data:string){
     return data
 }
 
 async function run(){
-    const fileContent = await Deno.readTextFile('input.txt');
-    const data = fileContent.split("\n");
-    console.log(solveQuestion(data))
+    const data = await Deno.readTextFile('input.txt');
+    console.log(solver(data))
+    console.log(runTest(test1, solver))
 }
 run();
