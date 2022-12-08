@@ -1,6 +1,9 @@
-import { runTest, TestCase } from "./test.utils";
+import { runTest, TestCase } from "../test.utils";
 
-const test1:TestCase = {}
+const test1:TestCase = {
+    input: ``,
+    expected: 0
+}
 
 function solver(data:string){
     return data
